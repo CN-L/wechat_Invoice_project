@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <link rel="icon" href="../src/assets/favicon.ico">
+   <title>士力架</title>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <script>
+      //rem适配
+      (function(doc, win) {
+        document.body.addEventListener("focusout", () => {
+          //处理手机软键盘留空白
+          setTimeout(() => {
+            const scrollHeight = document.documentElement.scrollTop || document.body.scrollTop || 0;
+            window.scrollTo(0, Math.max(scrollHeight - 1, 0));
+          }, 200);
+        });
+        // let docEl = doc.documentElement
+        // let resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize'
+        // let recalc = function() {
+        //   let clientWidth = docEl.clientWidth
+        //   if (!clientWidth) return
+        //   docEl.style.fontSize = 100 * (clientWidth / 750) + 'px'
+        // }
+        // if (!doc.addEventListener) return
+        // recalc()
+        // win.addEventListener(resizeEvt, recalc, false)
+        // doc.addEventListener('DOMContentLoaded', recalc, false)
+      })(document, window)
+
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "id": "1748983",
+  "name": "士力架公众号",
+  "font_family": "my-icon",
+  "css_prefix_text": "my-icon-",
+  "description": "移动端使用vantui项目",
+  "glyphs": [
+    {
+      "icon_id": "947138",
+      "name": "电话",
+      "font_class": "dianhua",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "5385404",
+      "name": "成功",
+      "font_class": "chenggong",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "554092",
+      "name": "问号",
+      "font_class": "iconset0143",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    }
+  ]
+}
