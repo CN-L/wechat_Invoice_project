@@ -1,4 +1,4 @@
-# icfo-mobile
+# mobile-demo
 
 ## Project setup
 ```
